@@ -1,5 +1,4 @@
--- Save this script as 0-privileges.sql
-SELECT CONCAT('Grants for ', user, '@', host) AS UserGrants
-FROM mysql.user
-WHERE user IN ('user_0d_1', 'user_0d_2')
-  AND host = 'localhost';
+-- Delete user user_0d_1 and user_0d_2 if they exist
+DROP USER IF EXISTS 'user_0d_1'@'localhost';
+DROP USER IF EXISTS 'user_0d_2'@'localhost';
+
