@@ -1,8 +1,8 @@
 
--- Grant privileges for user_0d_1 only if the user doesn't exist
-GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost' IDENTIFIED BY 'password' REQUIRE NONE;
+-- 0-privileges.sql
 
--- main_2_0.sql
+-- Grant privileges for user_0d_1
+GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';
 
--- Attempt to create user_0d_1 with GRANT, expecting an error
-CREATE USER 'user_0d_1'@'localhost' IDENTIFIED BY 'password';
+-- Grant privileges for user_0d_1
+GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';
