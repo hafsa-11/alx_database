@@ -1,4 +1,3 @@
--- main_0_0.sql
 
 -- Grant privileges for user_0d_1 only if the user doesn't exist
 GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost' IDENTIFIED BY 'password' REQUIRE NONE;
